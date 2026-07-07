@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Edge Deepfake Shield",
+  "version": "1.0.0",
+  "description": "Real-time edge-based synthetic media detection.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "src/background/service-worker.ts",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/content/content-script.ts"]
+    }
+  ],
+  "action": {
+    "default_title": "Deepfake Shield"
+  }
+}
