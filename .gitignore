@@ -1,0 +1,8 @@
+# Python and OS files
+__pycache__/
+*.pyc
+.DS_Store
+
+# Heavy ML Models and Data (CRITICAL)
+*.pt
+data/
