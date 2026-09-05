@@ -4,7 +4,7 @@ __pycache__/
 .DS_Store
 
 # Heavy ML Models and Data (CRITICAL)
-*.pt
+
 data/
 
 .env
