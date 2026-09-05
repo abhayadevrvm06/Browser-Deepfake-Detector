@@ -44,6 +44,7 @@ def health_check():
 async def predict(file: UploadFile = File(...)):
     image_bytes = await file.read()
     image = Image.open(io.BytesIO(image_bytes)).convert("RGB")
+    image.thumbnail((640, 640))
 
     boxes, _ = mtcnn.detect(image)
 
