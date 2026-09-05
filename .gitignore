@@ -6,3 +6,8 @@ __pycache__/
 # Heavy ML Models and Data (CRITICAL)
 *.pt
 data/
+
+.env
+*.token
+
+.ipynb_checkpoints/
